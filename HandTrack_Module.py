@@ -73,7 +73,7 @@ def main():
     while(True):
         working, cam = vid.read()
         cam = detect.lookForHands(cam)
-        LandmarkList = detect.findCoordinate(cam)
+        LandmarkList = detect.lookForPosition(cam)
         #if len(LandmarkList) != 0:
             #print(LandmarkList[])
 
